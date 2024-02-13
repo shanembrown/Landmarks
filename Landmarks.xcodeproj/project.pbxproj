@@ -13,6 +13,8 @@
 		3A99A29F2B7BBAA6008D7F8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A99A29E2B7BBAA6008D7F8F /* Preview Assets.xcassets */; };
 		3A99A2A72B7BC3D0008D7F8F /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99A2A62B7BC3D0008D7F8F /* CircleImage.swift */; };
 		3A99A2AB2B7BC5A3008D7F8F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99A2AA2B7BC5A3008D7F8F /* MapView.swift */; };
+		3A99A2AF2B7BE483008D7F8F /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99A2AE2B7BE483008D7F8F /* Landmark.swift */; };
+		3A99A2B12B7BE643008D7F8F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99A2B02B7BE643008D7F8F /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		3A99A2A52B7BBBA9008D7F8F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3A99A2A62B7BC3D0008D7F8F /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		3A99A2AA2B7BC5A3008D7F8F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3A99A2AE2B7BE483008D7F8F /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		3A99A2B02B7BE643008D7F8F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		3A99A2B52B7BE82D008D7F8F /* landmarkData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				3A99A2A52B7BBBA9008D7F8F /* README.md */,
+				3A99A2972B7BBAA4008D7F8F /* LandmarksApp.swift */,
 				3A99A2962B7BBAA4008D7F8F /* Landmarks */,
 				3A99A2952B7BBAA4008D7F8F /* Products */,
 			);
@@ -57,12 +63,11 @@
 		3A99A2962B7BBAA4008D7F8F /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
-				3A99A2972B7BBAA4008D7F8F /* LandmarksApp.swift */,
-				3A99A2992B7BBAA4008D7F8F /* ContentView.swift */,
+				3A99A2B22B7BE7D0008D7F8F /* Views */,
+				3A99A2B32B7BE7F7008D7F8F /* Model */,
+				3A99A2B42B7BE81B008D7F8F /* Resources */,
 				3A99A29B2B7BBAA6008D7F8F /* Assets.xcassets */,
-				3A99A2A62B7BC3D0008D7F8F /* CircleImage.swift */,
 				3A99A29D2B7BBAA6008D7F8F /* Preview Content */,
-				3A99A2AA2B7BC5A3008D7F8F /* MapView.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -73,6 +78,33 @@
 				3A99A29E2B7BBAA6008D7F8F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3A99A2B22B7BE7D0008D7F8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A99A2992B7BBAA4008D7F8F /* ContentView.swift */,
+				3A99A2AA2B7BC5A3008D7F8F /* MapView.swift */,
+				3A99A2A62B7BC3D0008D7F8F /* CircleImage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A99A2B32B7BE7F7008D7F8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A99A2B02B7BE643008D7F8F /* ModelData.swift */,
+				3A99A2AE2B7BE483008D7F8F /* Landmark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A99A2B42B7BE81B008D7F8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A99A2B52B7BE82D008D7F8F /* landmarkData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +181,8 @@
 				3A99A2AB2B7BC5A3008D7F8F /* MapView.swift in Sources */,
 				3A99A2982B7BBAA4008D7F8F /* LandmarksApp.swift in Sources */,
 				3A99A2A72B7BC3D0008D7F8F /* CircleImage.swift in Sources */,
+				3A99A2AF2B7BE483008D7F8F /* Landmark.swift in Sources */,
+				3A99A2B12B7BE643008D7F8F /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
